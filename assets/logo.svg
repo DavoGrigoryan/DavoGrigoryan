@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="229" height="53" viewBox="0 0 229 53">
+    <defs>
+        <style>
+            .cls-2{fill:#2bd2d6}
+        </style>
+    </defs>
+    <g id="Group_41" transform="translate(-238 -41)">
+        <g id="Group_39" transform="translate(238 46)">
+            <text id="Sv_cha.am" font-family="SegoeUI, Segoe UI" font-size="40px" transform="translate(0 38)">
+                <tspan x="0" y="0">SV CHA.AM</tspan>
+            </text>
+        </g>
+        <g id="Group_40" transform="translate(290.944 52.425)">
+            <path id="Path_1204" d="M.045-1.7L19.056-.162v7.206H.045z" transform="translate(-.039 22.42)"/>
+            <path id="Path_1205" d="M.045-1.641l19.012 1.4v7.206H.045z" transform="translate(-.045 11.747)"/>
+            <path id="Path_1206" d="M.045-1.383L7.312-.6v7.2H.045z" transform="translate(11.7 1.383)"/>
+            <path id="Path_1201" d="M.042 3.519L19.156 0v7.206L.042 10.725z" class="cls-2" transform="translate(-.042 .781)"/>
+            <path id="Path_1202" d="M.042 3.519L19.156 0v7.206L.042 10.725z" class="cls-2" transform="translate(-.042 11.506)"/>
+            <path id="Path_1203" d="M.042 3.519L19.156 0v7.206L.042 10.725z" class="cls-2" transform="translate(-.042 22.231)"/>
+        </g>
+    </g>
+</svg>

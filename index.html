@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="swiper/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Svecha.am</title>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header-content row">
+            <div class="col-8 d-flex align-items-center">
+                <div class="dropdown">
+                    <button class="menu-btn p-0" type="button" id="menu" data-bs-toggle="dropdown" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 384">
+                            <rect x="0" y="277.333" width="384" height="42.667" fill="#000000" data-original="#000000" style=""/>
+                            <rect x="0" y="170.667" width="384" height="42.667" fill="#000000" data-original="#000000" style=""/>
+                            <rect x="0" y="64" width="384" height="42.667" fill="#000000" data-original="#000000" style=""/>
+                        </svg>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="menu">
+                        <li><button class="dropdown-item" type="button">Action</button></li>
+                        <li><button class="dropdown-item" type="button">Another action</button></li>
+                        <li><button class="dropdown-item" type="button">Something else here</button></li>
+                    </ul>
+                </div>
+                <div class="logo">
+                    <a href="/">
+                        <div class="img-wrapper">
+                            <img src="assets/logo.svg" alt="logo" class="img-fluid">
+                        </div>
+                    </a>
+                    <p class="title m-0 d-none d-md-block"><span>&lt;&lt;սվեչեքի&gt;&gt;</span>  մասնագիտացված  առցանց  խանութ</p>
+                </div>
+            </div>
+            <div class="col-4 d-flex align-items-center justify-content-end">
+                <div class="order d-none d-md-block">
+                    <div class="d-flex align-items-center">
+                        <img src="assets/order.svg" alt="image-order" class="img-fluid">
+                        <p class="mt-0 mb-0 order-text">ԱՌԱՔՈՒՄ</p>
+                    </div>
+                    <p class="m-0 order-number">
+                        +374 99 88 77 66
+                    </p>
+                </div>
+                <div class="language">
+                    <p class="mt-0 mb-0">Рус</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="search-filter">
+    <div class="container">
+        <form action="" class="search-filter-form">
+            <div class="d-flex row flex-wrap justify-content-between">
+                <div class="col-12 col-lg-3 d-flex justify-content-around justify-content-lg-between align-items-center mb-3 mb-lg-0">
+                    <div class="checkbox">
+                        <input type="checkbox" id="vin" checked>
+                        <label for="vin">Vin</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" id="number">
+                        <label for="number">ՀԱՄԱՐ</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" id="word">
+                        <label for="word">ԲԱՌ</label>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-8 d-flex align-items-center justify-content-start">
+                    <div class="search-input">
+                        <input type="text">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 118.783 118.783" >
+                            <path d="M115.97,101.597L88.661,74.286c4.64-7.387,7.333-16.118,7.333-25.488c0-26.509-21.49-47.996-47.998-47.996   S0,22.289,0,48.798c0,26.51,21.487,47.995,47.996,47.995c10.197,0,19.642-3.188,27.414-8.605l26.984,26.986   c1.875,1.873,4.333,2.806,6.788,2.806c2.458,0,4.913-0.933,6.791-2.806C119.72,111.423,119.72,105.347,115.97,101.597z    M47.996,81.243c-17.917,0-32.443-14.525-32.443-32.443s14.526-32.444,32.443-32.444c17.918,0,32.443,14.526,32.443,32.444   S65.914,81.243,47.996,81.243z"/>
+                        </svg>
+                    </div>
+                    <button type="submit" class="search-submit-btn">ՄԱՆՐԱՄԱՍՆ  ՈՐՈՆՈՒՄ</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="car-search">
+    <div class="container position-relative h-100">
+        <form action="" class="car-search-form">
+            <div class="d-flex align-items-center">
+                <div class="car-search-row w-100 flex-wrap flex-lg-nowrap">
+                    <div class="car-search-col mb-2 mb-lg-0">
+                        <div class="car-search-select position-relative">
+                            <select name="select" id="select-year" class="select">
+                                <option selected disabled>տարի</option>
+                                <option value="1">2000</option>
+                                <option value="2">2001</option>
+                                <option value="3">2002</option>
+                            </select>
+                            <svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="18.13" height="18.601" viewBox="0 0 18.13 18.601">
+                                <path fill="#2bd2d6" d="M17.313 10.159l.922.922a.992.992 0 0 1 0 1.407l-8.066 8.071a.992.992 0 0 1-1.407 0L.69 12.488a.992.992 0 0 1 0-1.407l.922-.922a1 1 0 0 1 1.424.017l4.766 5V3.246a.994.994 0 0 1 1-1h1.328a.994.994 0 0 1 1 1v11.932l4.766-5a.99.99 0 0 1 1.417-.019z" transform="translate(-.397 -2.25)"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="car-search-col mb-2 mb-lg-0">
+                        <div class="car-search-select position-relative">
+                            <select name="select" id="select-model" class="select">
+                                <option selected disabled>մակնիշ</option>
+                                <option value="1">BMW</option>
+                                <option value="2">AUDI</option>
+                                <option value="3">TOYOTA</option>
+                            </select>
+                            <svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="18.13" height="18.601" viewBox="0 0 18.13 18.601">
+                                <path fill="#2bd2d6" d="M17.313 10.159l.922.922a.992.992 0 0 1 0 1.407l-8.066 8.071a.992.992 0 0 1-1.407 0L.69 12.488a.992.992 0 0 1 0-1.407l.922-.922a1 1 0 0 1 1.424.017l4.766 5V3.246a.994.994 0 0 1 1-1h1.328a.994.994 0 0 1 1 1v11.932l4.766-5a.99.99 0 0 1 1.417-.019z" transform="translate(-.397 -2.25)"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="car-search-col mb-2 mb-sm-0">
+                        <div class="car-search-select position-relative">
+                            <select name="select" id="select-model-type" class="select">
+                                <option selected disabled>մոդել</option>
+                                <option value="1">BMW</option>
+                                <option value="2">AUDI</option>
+                                <option value="3">TOYOTA</option>
+                            </select>
+                            <svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="18.13" height="18.601" viewBox="0 0 18.13 18.601">
+                                <path fill="#2bd2d6" d="M17.313 10.159l.922.922a.992.992 0 0 1 0 1.407l-8.066 8.071a.992.992 0 0 1-1.407 0L.69 12.488a.992.992 0 0 1 0-1.407l.922-.922a1 1 0 0 1 1.424.017l4.766 5V3.246a.994.994 0 0 1 1-1h1.328a.994.994 0 0 1 1 1v11.932l4.766-5a.99.99 0 0 1 1.417-.019z" transform="translate(-.397 -2.25)"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="car-search-col">
+                        <button type="submit" class="car-search-submit-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24.006" viewBox="0 0 24 24.006">
+                                <path fill="#080808" d="M87.813 84.169l-5.3-5.369a9.8 9.8 0 0 0 1.313-4.869 9.913 9.913 0 1 0-9.912 9.931 9.755 9.755 0 0 0 5.006-1.4l5.275 5.35a.66.66 0 0 0 .456.194.634.634 0 0 0 .456-.194l2.706-2.738a.641.641 0 0 0 0-.905zm-13.9-16.3a6.063 6.063 0 1 1-6.05 6.063 6.062 6.062 0 0 1 6.05-6.063z" transform="translate(-64 -64)"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="assortment">
+    <div class="container">
+        <h2 class="titile">տԵՍԱԿԱՆԻ</h2>
+        <div class="swiper-container assortmentSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#" class="assortment-item">
+                        <img src="assets/spark1.jpg" alt="assortment-item-image">
+                        <p class="assortment-item-title">Spark</p>
+                        <div class="assortment-item-count d-flex align-items-center justify-content-center">
+                            <p class="mt-0 mb-0">1200</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12">
+                                <path fill="#2bd2d6" d="M6 0l6 11H0z" transform="rotate(90 5.5 5.5)"/>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" class="assortment-item">
+                        <img src="assets/sparkPlugWires1.jpg" alt="assortment-item-image">
+                        <p class="assortment-item-title">Spark Plug Wires</p>
+                        <div class="assortment-item-count d-flex align-items-center justify-content-center">
+                            <p class="mt-0 mb-0">800</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12">
+                                <path fill="#2bd2d6" d="M6 0l6 11H0z" transform="rotate(90 5.5 5.5)"/>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" class="assortment-item">
+                        <img src="assets/airbagClocking1.jpg" alt="assortment-item-image">
+                        <p class="assortment-item-title">airbag clocking</p>
+                        <div class="assortment-item-count d-flex align-items-center justify-content-center">
+                            <p class="mt-0 mb-0">1200</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12">
+                                <path fill="#2bd2d6" d="M6 0l6 11H0z" transform="rotate(90 5.5 5.5)"/>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" class="assortment-item">
+                        <img src="assets/crankshaftSensor1.jpg" alt="assortment-item-image">
+                        <p class="assortment-item-title">crankshaft sensor</p>
+                        <div class="assortment-item-count d-flex align-items-center justify-content-center">
+                            <p class="mt-0 mb-0">2500</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12">
+                                <path fill="#2bd2d6" d="M6 0l6 11H0z" transform="rotate(90 5.5 5.5)"/>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a href="#" class="assortment-item">
+                        <img src="assets/spark2.jpg" alt="assortment-item-image">
+                        <p class="assortment-item-title">Spark</p>
+                        <div class="assortment-item-count d-flex align-items-center justify-content-center">
+                            <p class="mt-0 mb-0">1200</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12">
+                                <path fill="#2bd2d6" d="M6 0l6 11H0z" transform="rotate(90 5.5 5.5)"/>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" class="assortment-item">
+                        <img src="assets/sparkPlugWires2.jpg" alt="assortment-item-image">
+                        <p class="assortment-item-title">Spark Plug Wires</p>
+                        <div class="assortment-item-count d-flex align-items-center justify-content-center">
+                            <p class="mt-0 mb-0">800</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12">
+                                <path fill="#2bd2d6" d="M6 0l6 11H0z" transform="rotate(90 5.5 5.5)"/>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" class="assortment-item">
+                        <img src="assets/airbagClocking2.jpg" alt="assortment-item-image">
+                        <p class="assortment-item-title">airbag clocking</p>
+                        <div class="assortment-item-count d-flex align-items-center justify-content-center">
+                            <p class="mt-0 mb-0">1200</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12">
+                                <path fill="#2bd2d6" d="M6 0l6 11H0z" transform="rotate(90 5.5 5.5)"/>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" class="assortment-item">
+                        <img src="assets/crankshaftSensor2.jpg" alt="assortment-item-image">
+                        <p class="assortment-item-title">crankshaft sensor</p>
+                        <div class="assortment-item-count d-flex align-items-center justify-content-center">
+                            <p class="mt-0 mb-0">2500</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12">
+                                <path fill="#2bd2d6" d="M6 0l6 11H0z" transform="rotate(90 5.5 5.5)"/>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a href="#" class="assortment-item">
+                        <img src="assets/spark3.jpg" alt="assortment-item-image">
+                        <p class="assortment-item-title">Spark</p>
+                        <div class="assortment-item-count d-flex align-items-center justify-content-center">
+                            <p class="mt-0 mb-0">1200</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12">
+                                <path fill="#2bd2d6" d="M6 0l6 11H0z" transform="rotate(90 5.5 5.5)"/>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" class="assortment-item">
+                        <img src="assets/sparkPlugWires3.jpg" alt="assortment-item-image">
+                        <p class="assortment-item-title">Spark Plug Wires</p>
+                        <div class="assortment-item-count d-flex align-items-center justify-content-center">
+                            <p class="mt-0 mb-0">800</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12">
+                                <path fill="#2bd2d6" d="M6 0l6 11H0z" transform="rotate(90 5.5 5.5)"/>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" class="assortment-item">
+                        <img src="assets/airbagClocking3.jpg" alt="assortment-item-image">
+                        <p class="assortment-item-title">airbag clocking</p>
+                        <div class="assortment-item-count d-flex align-items-center justify-content-center">
+                            <p class="mt-0 mb-0">1200</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12">
+                                <path fill="#2bd2d6" d="M6 0l6 11H0z" transform="rotate(90 5.5 5.5)"/>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" class="assortment-item">
+                        <img src="assets/crankshaftSensor3.jpg" alt="assortment-item-image">
+                        <p class="assortment-item-title">crankshaft sensor</p>
+                        <div class="assortment-item-count d-flex align-items-center justify-content-center">
+                            <p class="mt-0 mb-0">2500</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12">
+                                <path fill="#2bd2d6" d="M6 0l6 11H0z" transform="rotate(90 5.5 5.5)"/>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="post">
+    <div class="container">
+        <div class="row flex-wrap">
+            <div class="col-12 col-lg-6 mb-5 mb-lg-0 centered-col">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="292" height="72" viewBox="0 0 292 72">
+                    <defs>
+                        <pattern id="pattern" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 893 218">
+                            <image width="893" height="218" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA30AAADaCAYAAAASeytyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAJS2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNi4wLWMwMDYgNzkuMTY0NjQ4LCAyMDIxLzAxLzEyLTE1OjUyOjI5ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyIgeG1sbnM6ZXhpZj0iaHR0cDovL25zLmFkb2JlLmNvbS9leGlmLzEuMC8iIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1wTU06RG9jdW1lbnRJRD0iYWRvYmU6ZG9jaWQ6cGhvdG9zaG9wOjQwZGYwMWVlLWMxMDMtYTY0NC1iZDZmLTI0ODQyODllNTUwOCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo0MmJiOWQzMS1mYWZiLWNmNDItOTNlMS0zMTllNTA0ZDc4NzAiIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0iQTk2MzE5OUNFNkEwMEM0Nzg0RjhGQUM3MDMwNzRDMTciIGRjOmZvcm1hdD0iaW1hZ2UvcG5nIiBwaG90b3Nob3A6Q29sb3JNb2RlPSIzIiBwaG90b3Nob3A6SUNDUHJvZmlsZT0iIiB0aWZmOkltYWdlV2lkdGg9IjEyMDAiIHRpZmY6SW1hZ2VMZW5ndGg9IjYzMCIgdGlmZjpQaG90b21ldHJpY0ludGVycHJldGF0aW9uPSIyIiB0aWZmOlNhbXBsZXNQZXJQaXhlbD0iMyIgdGlmZjpYUmVzb2x1dGlvbj0iNzIvMSIgdGlmZjpZUmVzb2x1dGlvbj0iNzIvMSIgdGlmZjpSZXNvbHV0aW9uVW5pdD0iMiIgZXhpZjpFeGlmVmVyc2lvbj0iMDIzMSIgZXhpZjpDb2xvclNwYWNlPSI2NTUzNSIgZXhpZjpQaXhlbFhEaW1lbnNpb249IjEyMDAiIGV4aWY6UGl4ZWxZRGltZW5zaW9uPSI2MzAiIHhtcDpDcmVhdGVEYXRlPSIyMDIxLTAzLTIyVDIzOjI5OjIwKzA0OjAwIiB4bXA6TW9kaWZ5RGF0ZT0iMjAyMS0wMy0yMlQyMzozMDoxMyswNDowMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAyMS0wMy0yMlQyMzozMDoxMyswNDowMCI+IDx4bXBNTTpIaXN0b3J5PiA8cmRmOlNlcT4gPHJkZjpsaSBzdEV2dDphY3Rpb249InNhdmVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjZjMjQxY2I0LWY1ZWItMDY0MC04YjMxLTNmNmJjNTVhY2M1YiIgc3RFdnQ6d2hlbj0iMjAyMS0wMy0yMlQyMzozMDoxMyswNDowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIDIyLjIgKFdpbmRvd3MpIiBzdEV2dDpjaGFuZ2VkPSIvIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjb252ZXJ0ZWQiIHN0RXZ0OnBhcmFtZXRlcnM9ImZyb20gaW1hZ2UvanBlZyB0byBpbWFnZS9wbmciLz4gPHJkZjpsaSBzdEV2dDphY3Rpb249ImRlcml2ZWQiIHN0RXZ0OnBhcmFtZXRlcnM9ImNvbnZlcnRlZCBmcm9t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"/>
+                        </pattern>
+                    </defs>
+                    <rect id="haypost_logo" width="292" height="72" fill="url(#pattern)"/>
+                </svg>
+                <div>
+                    <p class="post-type-title">Փոստային առաքում</p>
+                    <p class="post-type-text">
+                        <span class="m-0 d-block text-center">Փոստային առաքում </span>
+                        <span class="m-0 d-block text-center">դեպի ՀՀ-ի բոլոր մարզեր</span>
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 centered-col">
+                <svg xmlns="http://www.w3.org/2000/svg" width="150" height="100" viewBox="0 0 36.311 20.361">
+                    <path fill="#ffffff" d="M13.454 148.707a3.033 3.033 0 1 0 3.031 3.035 3.032 3.032 0 0 0-3.031-3.035zm0 4.551a1.515 1.515 0 1 1 1.515-1.515 1.517 1.517 0 0 1-1.515 1.515zm22.857-6.793v3.235a1.462 1.462 0 0 1-1.462 1.462h-1.563a4.011 4.011 0 0 0-7.937 0h-7.928a4.008 4.008 0 0 0-7.932 0H7.531a1.462 1.462 0 0 1-1.462-1.462v-3.236zm-6.993 2.242a3.033 3.033 0 1 0 3.031 3.035 3.036 3.036 0 0 0-3.03-3.035zm0 4.551a1.515 1.515 0 1 1 1.515-1.515 1.517 1.517 0 0 1-1.514 1.515zm6.417-10.052l-5.744-5.681a1.953 1.953 0 0 0-1.369-.565h-2.9v-1.087a1.46 1.46 0 0 0-1.462-1.462H7.53a1.463 1.463 0 0 0-1.462 1.462v.229l-5.932.684 10.51 1.369L0 139.213l10.609 1.508-10.609.92 6.068 1.145v2.872H36.31v-1.068a1.958 1.958 0 0 0-.575-1.383zm-2.5.19h-5.563a.229.229 0 0 1-.229-.229v-4.293a.229.229 0 0 1 .229-.229h1.057a.247.247 0 0 1 .161.063l4.5 4.293a.229.229 0 0 1-.159.399z" transform="translate(-977 -40.139) translate(977 -94.273) translate(0 134.412) translate(0 -134.412)"/>
+                </svg>
+               <div>
+
+                   <p class="post-type-title">Էքսպրես առաքում</p>
+                   <p class="post-type-text">
+                        <span class="m-0 d-block text-center">Էքսպրես առաքում</span>
+                        <span class="m-0 d-block text-center">դեպի ՀՀ-ի բոլոր մարզեր</span>
+                   </p>
+               </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="partners">
+    <div class="swiper-container partnerSwiper">
+        <div class="swiper-wrapper d-flex align-items-center">
+            <div class="swiper-slide">
+                <div class="partner-image-wrapper">
+                    <img src="assets/partners/denso-logo.jpg" alt="aaa" class="img-fluid">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="partner-image-wrapper">
+                    <img src="assets/partners/ACDelco_logo.svg.jpg" alt="aaa" class="img-fluid">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="partner-image-wrapper">
+                    <img src="assets/partners/champion.jpg" alt="aaa" class="img-fluid">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="partner-image-wrapper">
+                    <img src="assets/partners/NGK-Logo.png" alt="aaa" class="img-fluid">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="partner-image-wrapper">
+                    <img src="assets/partners/ford_logo.png" alt="aaa" class="img-fluid">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="partner-image-wrapper">
+                    <img src="assets/partners/Bosch_logo.png" alt="aaa" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="container">
+        <div class="footer-title">
+            <svg xmlns="http://www.w3.org/2000/svg" width="97" height="22" viewBox="0 0 229 53">
+                <defs>
+                    <style>
+                        .cls-2{fill:#2bd2d6}
+                    </style>
+                </defs>
+                <g id="Group_41" transform="translate(-238 -41)">
+                    <g id="Group_39" transform="translate(238 46)">
+                        <text id="Sv_cha.am" font-family="SegoeUI, Segoe UI" font-size="40px" transform="translate(0 38)">
+                            <tspan x="0" y="0">SV CHA.AM</tspan>
+                        </text>
+                    </g>
+                    <g id="Group_40" transform="translate(290.944 52.425)">
+                        <path id="Path_1204" d="M.045-1.7L19.056-.162v7.206H.045z" transform="translate(-.039 22.42)"/>
+                        <path id="Path_1205" d="M.045-1.641l19.012 1.4v7.206H.045z" transform="translate(-.045 11.747)"/>
+                        <path id="Path_1206" d="M.045-1.383L7.312-.6v7.2H.045z" transform="translate(11.7 1.383)"/>
+                        <path id="Path_1201" d="M.042 3.519L19.156 0v7.206L.042 10.725z" class="cls-2" transform="translate(-.042 .781)"/>
+                        <path id="Path_1202" d="M.042 3.519L19.156 0v7.206L.042 10.725z" class="cls-2" transform="translate(-.042 11.506)"/>
+                        <path id="Path_1203" d="M.042 3.519L19.156 0v7.206L.042 10.725z" class="cls-2" transform="translate(-.042 22.231)"/>
+                    </g>
+                </g>
+            </svg>
+        </div>
+        <div class="row d-flex align-items-center">
+            <div class="col-6 col-lg-3 d-none d-lg-block">
+                <p class="text-left m-0 footer-reklam">&lt;&lt;Սվեչեքի&gt;&gt; մասնագիտացված առցանց  խանութ</p>
+            </div>
+            <div class="col-6 col-xs-4 col-lg-3 mb-3 mb-xs-0">
+                <a href="#" class="footer-link text-center text-xs-start">ՄԵՐ ՄԱՍԻՆ</a>
+                <a href="#" class="footer-link text-center text-xs-start">ՏԵՍԱԿԱՆԻ</a>
+            </div>
+            <div class="col-6 col-xs-4 col-lg-3 mb-3 mb-xs-0">
+                <a href="#" class="footer-link text-center text-xs-start">ԲՐԵՆԴԵՐ</a>
+                <a href="#" class="footer-link text-center text-xs-start">ՊԱՅՄԱՆՆԵՐ</a>
+            </div>
+            <div class="col-12 col-xs-4 col-lg-3">
+                <div class="order">
+                    <div class="d-flex align-items-center justify-content-center justify-content-xs-end">
+                        <img src="assets/order.svg" alt="image-order" class="img-fluid">
+                        <p class="order-text">ԱՌԱՔՈՒՄ</p>
+                    </div>
+                    <p class="m-0 order-number text-center text-xs-end">
+                        +374 99 88 77 66
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row social-icons-wrapper d-flex align-items-center justify-content-between">
+            <div class="col-6">
+                <div class="social-icons">
+                    <svg class="mr-3" xmlns="http://www.w3.org/2000/svg" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 24 24" xml:space="preserve">
+                        <path xmlns="http://www.w3.org/2000/svg" d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z" fill="#53d9dc" data-original="#000000" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" xml:space="preserve" >
+                        <path xmlns="http://www.w3.org/2000/svg" style="" d="M256.064,0h-0.128l0,0C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104  l98.4-31.456C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z" fill="#53d9dc" data-original="#4caf50" />
+                        <path xmlns="http://www.w3.org/2000/svg" style="" d="M405.024,361.504c-6.176,17.44-30.688,31.904-50.24,36.128c-13.376,2.848-30.848,5.12-89.664-19.264  C189.888,347.2,141.44,270.752,137.664,265.792c-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624,26.176-62.304  c6.176-6.304,16.384-9.184,26.176-9.184c3.168,0,6.016,0.16,8.576,0.288c7.52,0.32,11.296,0.768,16.256,12.64  c6.176,14.88,21.216,51.616,23.008,55.392c1.824,3.776,3.648,8.896,1.088,13.856c-2.4,5.12-4.512,7.392-8.288,11.744  c-3.776,4.352-7.36,7.68-11.136,12.352c-3.456,4.064-7.36,8.416-3.008,15.936c4.352,7.36,19.392,31.904,41.536,51.616  c28.576,25.44,51.744,33.568,60.032,37.024c6.176,2.56,13.536,1.952,18.048-2.848c5.728-6.176,12.8-16.416,20-26.496  c5.12-7.232,11.584-8.128,18.368-5.568c6.912,2.4,43.488,20.48,51.008,24.224c7.52,3.776,12.48,5.568,14.304,8.736  C411.2,329.152,411.2,344.032,405.024,361.504z" fill="#fafafa" data-original="#fafafa" class=""/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" xml:space="preserve" >
+                        <path xmlns="http://www.w3.org/2000/svg" style="" d="M307.207,0H204.794C105.969,0,25.571,80.398,25.571,179.223v76.81  c0,69.381,40.014,132.344,102.413,161.961v85.537c0,7.427,9.291,11.31,14.569,6.035l74.309-74.31h90.344  c98.824,0,179.223-80.398,179.223-179.223v-76.81C486.429,80.398,406.03,0,307.207,0z" fill="#53d9dc" data-original="#665cac" class=""/>
+                        <path xmlns="http://www.w3.org/2000/svg" style="" d="M153.587,417.993c-62.399-29.618-102.413-92.58-102.413-161.961v-76.81  C51.174,80.398,131.573,0,230.397,0h-25.603C105.969,0,25.571,80.398,25.571,179.223v76.81c0,69.381,40.014,132.344,102.413,161.961  v85.537c0,7.427,9.291,11.31,14.569,6.035l11.034-11.034V417.993z" fill="#53d9dc" data-original="#523494" class=""/>
+                        <path xmlns="http://www.w3.org/2000/svg" style="" d="M384.85,318.101l-7.673-41.566c-0.635-3.434-3.295-6.135-6.719-6.82l-60.347-12.069  c-2.803-0.558-5.691,0.317-7.71,2.334l-24.517,24.518c-41.308-18.509-64.234-41.485-84.406-84.566l24.438-24.437  c2.017-2.018,2.893-4.912,2.334-7.71l-12.069-60.348c-0.685-3.423-3.386-6.085-6.82-6.719l-41.566-7.672  c-1.138-0.209-2.31-0.187-3.44,0.07c-10.975,2.493-20.989,8.023-28.96,15.996c-13.802,13.802-19.077,33.942-15.253,58.243  c6.419,40.806,26.411,97.594,63.296,134.627l0.504,0.5c37.004,36.859,93.793,56.853,134.601,63.273  c5.141,0.81,10.092,1.211,14.84,1.211c17.695,0,32.52-5.582,43.405-16.465c7.971-7.972,13.503-17.986,15.995-28.959  C385.036,320.411,385.06,319.241,384.85,318.101z" fill="#ffffff" data-original="#ffffff" class=""/>
+	                    <polygon style="" points="209.571,183.839 217.915,175.494 217.924,175.485 209.57,183.838  " fill="#e5e5e5" data-original="#e5e5e5" class=""/>
+
+                        <rect x="292.235" y="264.183" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -99.4675 288.2322)" style="" width="11.916" height="0.002" fill="#e5e5e5" data-original="#e5e5e5" class=""/>
+                        <path style="" d="M341.473,350.871c-4.748,0-9.699-0.401-14.84-1.211c-40.807-6.42-97.596-26.414-134.601-63.273   l-0.504-0.5c-36.885-37.033-56.877-93.821-63.296-134.627c-3.089-19.633-0.233-36.548,8.256-49.601   c-3.251,2.169-6.302,4.657-9.097,7.452c-13.802,13.802-19.077,33.942-15.253,58.243c6.419,40.806,26.411,97.594,63.296,134.627   l0.504,0.5c37.004,36.859,93.793,56.853,134.601,63.273c5.141,0.81,10.092,1.211,14.84,1.211c17.695,0,32.52-5.581,43.405-16.465   c2.794-2.795,5.282-5.845,7.451-9.096C366.598,347.672,354.858,350.871,341.473,350.871z" fill="#e5e5e5" data-original="#e5e5e5" class=""/>
+                        <path style="" d="M273.069,145.085c-4.713,0-8.534,3.821-8.534,8.534s3.821,8.534,8.534,8.534   c18.824,0,34.138,15.314,34.138,34.138c0,4.65,3.884,8.534,8.534,8.534s8.534-3.884,8.534-8.534   C324.276,168.055,301.305,145.085,273.069,145.085z" fill="#ffffff" data-original="#ffffff" class=""/>
+                        <path style="" d="M273.069,110.947c-3.157,0-6.343,0.175-9.471,0.52c-4.685,0.517-8.064,4.734-7.547,9.42   s4.743,8.056,9.42,7.547c2.508-0.277,5.064-0.418,7.598-0.418c37.647,0,68.275,30.628,68.275,68.275   c0,2.535-0.141,5.091-0.418,7.599c-0.51,4.621,2.924,8.911,7.547,9.42c4.622,0.509,8.909-2.924,9.42-7.547   c0.345-3.128,0.52-6.314,0.52-9.472C358.413,149.233,320.128,110.947,273.069,110.947z" fill="#ffffff" data-original="#ffffff" class=""/>
+                        <path style="" d="M273.069,76.81c-3.05,0-6.139,0.116-9.179,0.347c-4.7,0.356-8.222,4.456-7.866,9.155   c0.355,4.7,4.469,8.222,9.155,7.866c2.613-0.199,5.268-0.299,7.89-0.299c56.471,0,102.413,45.942,102.413,102.413   c0,7.99-0.922,15.944-2.74,23.64c-1.043,4.41,1.673,8.994,6.046,10.192c4.601,1.26,9.469-1.625,10.565-6.266   c2.122-8.981,3.198-18.255,3.198-27.566C392.551,130.409,338.952,76.81,273.069,76.81z" fill="#ffffff" data-original="#ffffff" class=""/>
+                    </svg>
+                </div>
+            </div>
+            <div class="col-6">
+                <p class="all-rights m-0">© 2021 all rights reserved</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="swiper/js/swiper-bundle.min.js"></script>
+<script src="javascript/script.js"></script>
+</body>
+</html>
